@@ -1,0 +1,101 @@
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 600px;
+    margin: 0 auto;
+    border: solid #931420;
+    background-color: #fffded;
+    padding: 0px;
+}
+
+header {
+    background-image: -webkit-linear-gradient(45deg, red 0%, white 50%, blue 100%);
+}
+
+header img {    
+    float: left;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    text-indent: 30px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 30px;
+}
+
+header .shadow {
+    text-shadow: 2px 2px #800000;
+}
+
+header {
+    border-bottom: solid #931420;
+}
+
+main {
+    clear: both;
+}
+
+main h1 {
+    font-size: 150%;
+    padding: .3em top bottom;
+}
+
+main h2 {
+    font-size: 130%;
+    color: #800000;
+    padding: .5em top, .25em bottom;
+    margin-left: 30px;
+}
+
+main h3 {
+    font-size: 105%;
+    padding: .25em bottom;
+}
+
+main img {
+    padding: 1em bottom;
+    margin-left: 30px;
+}
+
+section {
+    display: block;
+    border-top: solid;
+    border-bottom: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main p {
+    padding: .5em bottom;
+    margin-left: 20px;
+}
+
+main blockquote  {
+    padding: 2em right left;
+}
+
+main ul {
+    padding: .25em bottom, 1.25 em left;
+}
+
+main li {
+    padding: .35em bottom;
+}
+
+footer p {
+    text-align: center;
+    background-color: #800000;
+    color: white;
+    line-height: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
