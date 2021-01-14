@@ -1,0 +1,11 @@
+main p:first-child {
+    font-weight: bolder;
+}
+
+li:first-child {
+    font-weight: bolder;
+}
+
+main p:first-child {
+    color: red;
+}

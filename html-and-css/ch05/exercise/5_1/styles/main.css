@@ -1,3 +1,9 @@
+/* Reset selector */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 html {
     background-color: white;
 }
@@ -7,13 +13,13 @@ body {
     font-size: 100%;
     width: 600px;
     margin: 0 auto;
-    border: solid #931420;
+    border: 3px solid #931420;
     background-color: #fffded;
     padding: 0px;
 }
 
 header {
-    background-image: -webkit-linear-gradient(45deg, red 0%, white 50%, blue 100%);
+    background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 
 header img {    
@@ -42,6 +48,7 @@ header {
 
 main {
     clear: both;
+
 }
 
 main h1 {

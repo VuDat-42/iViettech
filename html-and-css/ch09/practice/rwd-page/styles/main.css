@@ -1,0 +1,283 @@
+/* standard 960px and above */
+
+/* style for the type selector */
+/* =========================== */
+html {
+  background-image: -moz-linear-gradient(to bottom, white 0%, #facd8a 100%);
+  background-image: -webkit-linear-gradient(to bottom, white 0%, #facd8a 100%);
+  background-image: -o-linear-gradient(to bottom, white 0%, #facd8a 100%);
+  background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 96%;
+  max-width: 1200px;
+  background-color: white;
+  margin: 15px auto;
+  padding: 15px 0;
+  border: 1px solid black;
+}
+
+article,
+aside,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside {
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 0.875em; /* 14px */
+  padding-bottom: 0.5em;
+  line-height: 130%;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #931420;
+}
+a:hover,
+a:focus {
+  color: black;
+}
+
+/* style for the header */
+/* =========================== */
+header {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+header h2 {
+  font-size: 2.15em; /* 36px */
+  color: #f2972e;
+  text-shadow: 2px 3px 0 black;
+  margin-left: 12.1212%; /* 120px */
+  margin-bottom: 0.25em;
+}
+
+header h3 {
+  font-size: 1.25em; /* 20px */
+  font-style: italic;
+  margin-left: 12.1212%; /* 120px */
+}
+
+header img {
+  width: 8.0808%; /* 80px */
+  max-width: 80px;
+  min-width: 40px;
+  float: left;
+  margin-left: 2.0202%; /* 20px */
+}
+
+/* style for navigation menu */
+/* =========================== */
+
+/* Formatting */
+#nav_menu ul {
+  display: flex;
+  flex-basis: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li {
+  flex-basis: 20%;
+}
+
+#nav_menu ul li a {
+  text-align: center;
+  display: block;
+  padding: 0.7em 0;
+  background-color: #facd8a;
+}
+
+#nav_menu ul li a.current {
+  color: #f2972e;
+}
+
+#nav_menu ul li:hover ul {
+  width: 100%;
+}
+
+/* style for the main */
+/* =========================== */
+main {
+  display: flex;
+}
+
+/* style for the article */
+/* =========================== */
+article {
+  flex-basis: 60%;
+  margin: 1.5em 2.5252% 0 2.0202%; /* top:24px right:20px left:20px */
+}
+
+article h1 {
+  font-size: 1.625em; /* 26px */
+  margin-bottom: 0.35em;
+}
+
+article img {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+article p {
+  margin-bottom: 0.5em;
+}
+
+/* style for the sidebar */
+/* =========================== */
+aside {
+  flex-basis: 40%;
+  padding: 2.0202%; /* 20px */
+  background-color: #ffebc6;
+  margin: 1.5em 2.0202% 0 0;
+  min-height: 180px;
+  max-height: 200px;
+}
+
+aside h2 {
+  font-size: 1.25em; /* 20px */
+  padding-bottom: 0.5em; /* 8px */
+}
+
+aside ul {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+aside li {
+  font-size: 0.875em; /* 14px */
+  padding-bottom: 0.35em;
+}
+
+/* style for the footer */
+/* =========================== */
+footer {
+  display: flex;
+  flex-basis: 100%;
+  border-top: 2px solid #f2972e;
+  padding-top: 0.7em;
+  justify-content: flex-end;
+}
+
+footer p {
+  font-size: 0.75em; /* 12px */
+  text-align: right;
+  margin-right: 2.0202%; /* 20px */
+}
+
+/* hide the mobile menu initially */
+#mobile_menu {
+  display: none;
+}
+
+/* media query for different screen size */
+/* =========================== */
+
+/* mobile landscape to tablet portrail */
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h2 {
+    font-size: 1.625em; /* 26px */
+    margin: 0.4em 0 0.25em 0;
+  }
+  header h3 {
+    font-size: 1em;
+    margin-left: 0;
+  }
+  header img {
+    float: none;
+    flex-basis: 25%;
+  }
+
+  footer p {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  #nav_menu {
+    display: none;
+  }
+  #mobile_menu {
+    display: block;
+  }
+  .slicknav_menu {
+    background-color: #4f8f1a !important;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    flex: 100%; /* 100 - (2 * 2.0202) for padding */
+    order: 2;
+  }
+
+  article img {
+    float: left;
+    width: 50%;
+    margin-right: 2%;
+  }
+
+  aside {
+    order: 1;
+    margin: 0;
+  }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+  header h2 {
+    font-size: 1.375em; /* 22px */
+  }
+  header h3 {
+    font-size: 0, 8125em; /* 13px */
+  }
+  p {
+    font-size: 0.875em; /* 14px */
+  }
+
+  article h1 {
+    font-size: 1em;
+  }
+  article img {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  aside h2 {
+    font-size: 1em;
+  }
+  aside li {
+    font-size: 0.875em; /* 14px */
+  }
+}

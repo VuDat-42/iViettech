@@ -1,0 +1,23 @@
+#vertical_menu ul {
+    list-style-type: none;
+}
+
+#vertical_menu ul li {
+    width: 200px;
+    border: 2px solid blue;
+    margin-bottom: .5em;
+    float: left;
+}
+
+#vertical_menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: .25em 1em;
+    text-align: center;
+}
+
+#vertical_menu ul li a:hover, #vertical_menu ul li a:focus {
+    background-color: cadetblue;
+}

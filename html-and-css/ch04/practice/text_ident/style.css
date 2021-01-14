@@ -1,0 +1,19 @@
+body {
+    font-size: 100%;
+    margin: 2em;
+}
+
+h1 {
+    font-size: 180%;
+    color: blue;
+    text-shadow: -2px -2px 4px red;
+}
+
+main p {
+    text-indent: 2em;
+}
+
+footer p {
+    font-size: 80%;
+    text-align: right;
+}
