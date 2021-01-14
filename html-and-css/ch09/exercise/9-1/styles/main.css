@@ -9,8 +9,10 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
+	width: 800px;
+	max-width: 1200px;
+	margin: 15px auto;
+	/* padding: 15px 0; */
     border: 3px solid #931420;
     background-color: #fffded;
 }
@@ -48,6 +50,7 @@ header img {
 
 /* the styles for the navigation menu */
 #nav_menu ul {
+	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -94,6 +97,7 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
+	/* display: flex; */
 }
 
 /* the styles for the section */
@@ -177,3 +181,102 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
+/* hide the mobile menu initially */
+#mobile_menu {
+	display: none;
+  }
+  
+  /* media query for different screen size */
+  /* =========================== */
+  
+  /* mobile landscape to tablet portrail */
+  @media only screen and (max-width: 767px) {
+	body {
+	  width: 100%;
+	  margin: 0;
+	  border: none;
+	}
+  
+	header {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	header h2 {
+	  font-size: 1.625em; /* 26px */
+	  margin: 0.4em 0 0.25em 0;
+	}
+	header h3 {
+	  font-size: 1em;
+	  margin-left: 0;
+	}
+	header img {
+	  float: none;
+	  flex-basis: 25%;
+	}
+  
+	footer p {
+	  text-align: center;
+	  margin-right: 0;
+	}
+  
+	#nav_menu {
+	  display: none;
+	}
+	#mobile_menu {
+	  display: block;
+	}
+	.slicknav_menu {
+	  background-color: #800000 !important;
+	}
+  
+	main {
+	  flex-direction: column;
+	}
+  
+	article {
+	  flex: 100%; /* 100 - (2 * 2.0202) for padding */
+	  order: 2;
+	}
+  
+	article img {
+	  float: left;
+	  width: 50%;
+	  margin-right: 2%;
+	}
+  
+	aside {
+	  order: 1;
+	  margin: 0;
+	}
+  }
+  
+  /* mobile portrait to mobile landscape */
+  @media only screen and (max-width: 479px) {
+	header h2 {
+	  font-size: 1.375em; /* 22px */
+	}
+	header h3 {
+	  font-size: 0, 8125em; /* 13px */
+	}
+	p {
+	  font-size: 0.875em; /* 14px */
+	}
+  
+	article h1 {
+	  font-size: 1em;
+	}
+	article img {
+	  float: none;
+	  width: 100%;
+	  margin-right: 0;
+	}
+  
+	aside h2 {
+	  font-size: 1em;
+	}
+	aside li {
+	  font-size: 0.875em; /* 14px */
+	}
+  }
