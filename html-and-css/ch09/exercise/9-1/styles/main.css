@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-	width: 800px;
+	width: 80%;
 	max-width: 1200px;
 	margin: 15px auto;
 	/* padding: 15px 0; */
@@ -57,8 +57,10 @@ header img {
 	position: relative;
 	width: 100%;
 	background-color: #800000;
+	justify-content: space-evenly;
 }
 #nav_menu ul li {
+	display: block;
 	float: left;
 	flex-basis: 20%;
 }
@@ -97,14 +99,16 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
-	/* display: flex; */
+	display: flex;
 }
 
 /* the styles for the section */
 section {
-	width: 525px;
+	/* width: 525px; */
+	flex-basis: 70%;
 	float: right;
 	padding: 0 20px 20px 20px;
+	order: 1;
 }
 section h1 {
 	font-size: 150%;
@@ -152,7 +156,8 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	/* width: 215px; */
+	flex-basis: 30%;
 	float: right;
 	padding: 0 0 20px 20px;
 }
