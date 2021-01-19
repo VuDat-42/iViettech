@@ -1,0 +1,41 @@
+body {
+  height: 600px;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template: 80px 1fr 1fr 60px / 200px 1fr 1fr;
+  gap: 16px;
+}
+header {
+  grid-row: 1/2;
+  grid-column: 1 / 4;
+  background-color: blue;
+}
+
+nav {
+  grid-row: 2/4;
+  grid-column: 1 / 2;
+  background-color: green;
+}
+
+#s1 {
+  grid-row: 2/3;
+  grid-column: 2 / 4;
+  background-color: cadetblue;
+}
+#s2 {
+  grid-row: 3/4;
+  grid-column: 2 / 3;
+  background-color: coral;
+}
+#s3 {
+  grid-row: 3/4;
+  grid-column: 3 / 4;
+  background-color: cyan;
+}
+
+footer {
+  grid-row: 4/5;
+  grid-column: 1 / 4;
+  background-color: dodgerblue;
+}

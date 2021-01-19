@@ -1,0 +1,51 @@
+nav,
+section,
+main,
+footer {
+  display: grid;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+div {
+  background-color: silver;
+}
+
+nav {
+  grid-template: 80px / 120px 1fr;
+  gap: 20px;
+}
+
+/* element type div is 2nd in nav*/
+nav div:nth-of-type(2) {
+  height: 40px;
+  align-self: center;
+}
+
+section {
+  grid-template-rows: 200px;
+}
+
+main {
+  height: 160px;
+  grid-template: 120px / repeat(3, 180px);
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+main div:first-child {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+main div#different {
+  justify-self: start;
+}
+
+footer {
+  height: 40px;
+  background-color: silver;
+  align-items: center;
+  justify-items: center;
+}

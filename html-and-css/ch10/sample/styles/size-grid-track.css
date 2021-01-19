@@ -1,0 +1,42 @@
+div {
+  background-color: silver;
+}
+
+#grid1,
+#grid2,
+#grid3,
+#grid4,
+#grid5 {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: rgb(247, 237, 148);
+}
+
+/* fixed track size */
+#grid1 {
+  grid-template: repeat(2, 50px) / repeat(3, 1fr);
+}
+
+/* fluid track size */
+#grid2 {
+  grid-template: repeat(2, 50px) / 100px 30% 1fr;
+}
+
+/* repeat multi columns */
+#grid3 {
+  grid-template: repeat(2, 50px) / repeat(2, 50px 1fr);
+}
+
+/* auto-fit with minmax */
+#grid4 {
+  grid-template: repeat(2, 50px) / repeat(auto-fit, minmax(75px, 1fr));
+  /* width: 360px; */
+}
+
+/* auto-fill with minmax */
+#grid5 {
+  grid-template: repeat(2, 50px) / repeat(auto-fill, minmax(75px, 1fr));
+  /* width: 360px; */
+}

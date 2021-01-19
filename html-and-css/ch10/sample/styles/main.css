@@ -1,0 +1,24 @@
+body {
+  margin: 30px auto;
+  /* width: 640px; */
+  width: 720px;
+}
+
+main {
+  display: grid;
+  /* grid-template: 100px 100px / 150px 150px 150px; */
+  /* grid-template: repeat(2, 100px) / repeat(3, 1fr); */
+  /* grid-template: repeat(2, 100px) / 100px 30% 1fr; */
+  /* grid-template: repeat(2, 100px) / repeat(2, 50px 1fr); */
+  /* grid-template: repeat(2, 100px) / repeat(auto-fill, minmax(75px, 1fr)); */
+  grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(75px, 1fr));
+  gap: 20px;
+}
+
+div {
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+body {
+  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 80px 1fr 1fr 60px / 200px 1fr 1fr;
+  gap: 16px;
+  grid-template-areas:
+    "head head head"
+    "navi sec1 sec1"
+    "navi sec2 sec3"
+    "foot foot foot";
+}
+header {
+  grid-area: head;
+  background-color: blue;
+}
+
+nav {
+  grid-area: navi;
+  background-color: green;
+}
+
+#s1 {
+  grid-area: sec1;
+  background-color: cadetblue;
+}
+#s2 {
+  grid-area: sec2;
+  background-color: coral;
+}
+#s3 {
+  grid-area: sec3;
+  background-color: cyan;
+}
+
+footer {
+  grid-area: foot;
+  background-color: dodgerblue;
+}
