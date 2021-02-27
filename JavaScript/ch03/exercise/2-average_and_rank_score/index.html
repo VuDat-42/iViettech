@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average and rank the score</title>
+    <script>
+        var math;
+        var physics;
+        var chemistry;
+        var average;
+
+        math = parseFloat(prompt("Please enter the Math score: "));
+        physics = parseFloat(prompt("Please enter the Physics score: "));
+        chemistry = parseFloat(prompt("Please enter the Chemistry score: "));
+        average = (math + physics + chemistry) / 3;
+
+        if (average >= 8) {
+            alert("Rank: A");
+        } else if (average >= 6.5) {
+            alert("Rank: B");
+        } else if (average >= 5) {
+            alert("Rank: C");
+        } else {
+            alert("Rank: D");
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

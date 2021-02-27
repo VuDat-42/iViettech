@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>List-group in Bootstrap</title>
+    <style>
+      ul {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Add <mark>badges</mark> to any list group item to show unread counts, activity, and more with the help of some
+      utilities.
+    </p>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A list item
+        <span class="badge badge-primary badge-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A second list item
+        <span class="badge badge-primary badge-pill">2</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A third list item
+        <span class="badge badge-primary badge-pill">1</span>
+      </li>
+    </ul>
+    <br />
+    <br />
+
+    <p>Custom content</p>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action active">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">List group item heading</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small>And some small print.</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">List group item heading</h5>
+          <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">List group item heading</h5>
+          <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+      </a>
+    </div>
+  </body>
+</html>

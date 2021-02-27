@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Basic grid structure</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Basic Grid Structure</h1>
+      <p>Resize the browser window to see the effect.</p>
+
+      <!-- col -->
+      <strong>col class is horizontal at all time with any screen width</strong>
+      <div class="container-fluid">
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col" style="background-color: yellow">25%</div>
+          <div class="col" style="background-color: orange">25%</div>
+          <div class="col" style="background-color: yellow">25%</div>
+          <div class="col" style="background-color: orange">25%</div>
+        </div>
+      </div>
+      <br />
+
+      <!-- col-sm -->
+      <strong>
+        col-sm: The first, second and third row will automatically stack on top of each other when the screen is less
+        than 576px wide.
+      </strong>
+
+      <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-sm-6" style="background-color: yellow">50%</div>
+          <div class="col-sm-6" style="background-color: orange">50%</div>
+        </div>
+        <br />
+
+        <div class="row">
+          <div class="col-sm-4" style="background-color: yellow">33.33%</div>
+          <div class="col-sm-4" style="background-color: orange">33.33%</div>
+          <div class="col-sm-4" style="background-color: yellow">33.33%</div>
+        </div>
+        <br />
+
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col-sm" style="background-color: yellow">25%</div>
+          <div class="col-sm" style="background-color: orange">25%</div>
+          <div class="col-sm" style="background-color: yellow">25%</div>
+          <div class="col-sm" style="background-color: orange">25%</div>
+        </div>
+      </div>
+      <br />
+
+      <!-- col-md -->
+      <strong>
+        col-md: The first, second row will automatically stack on top of each other when the screen is less than 768px
+        wide. Otherwise they remain horizontal align
+      </strong>
+
+      <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-md-6" style="background-color: yellow">50%</div>
+          <div class="col-md-6" style="background-color: orange">50%</div>
+        </div>
+        <br />
+
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col-md" style="background-color: yellow">25%</div>
+          <div class="col-md" style="background-color: orange">25%</div>
+          <div class="col-md" style="background-color: yellow">25%</div>
+          <div class="col-md" style="background-color: orange">25%</div>
+        </div>
+      </div>
+      <br />
+
+      <!-- col-lg -->
+      <strong>
+        col-lg: The first, second row will automatically stack on top of each other when the screen is less than 992px
+        wide. Otherwise they remain horizontal align
+      </strong>
+
+      <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-lg-6" style="background-color: yellow">50%</div>
+          <div class="col-lg-6" style="background-color: orange">50%</div>
+        </div>
+        <br />
+
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col-lg" style="background-color: yellow">25%</div>
+          <div class="col-lg" style="background-color: orange">25%</div>
+          <div class="col-lg" style="background-color: yellow">25%</div>
+          <div class="col-lg" style="background-color: orange">25%</div>
+        </div>
+      </div>
+      <br />
+
+      <!-- col-xl -->
+      <strong>
+        col-xl: The first, second row will automatically stack on top of each other when the screen is less than 1200px
+        wide. Otherwise they remain horizontal align
+      </strong>
+
+      <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-xl-6" style="background-color: yellow">50%</div>
+          <div class="col-xl-6" style="background-color: orange">50%</div>
+        </div>
+        <br />
+
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col-xl" style="background-color: yellow">25%</div>
+          <div class="col-xl" style="background-color: orange">25%</div>
+          <div class="col-xl" style="background-color: yellow">25%</div>
+          <div class="col-xl" style="background-color: orange">25%</div>
+        </div>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>

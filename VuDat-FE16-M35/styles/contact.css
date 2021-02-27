@@ -1,0 +1,72 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    height: 100px;
+    background-color: #ccc;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 100px;
+    display: block;
+    color: #000;
+}
+
+/* Content */
+#content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#content .content_top_left h2,
+#content .content_top_left p
+ {
+    margin-bottom: 15px;
+}
+
+#content .content_top_left {
+    width: 45%;
+}
+
+/* footer */
+footer {
+    clear: both;
+    background-color: #ccc;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+footer img {
+    display: flex;
+    margin-right: 70px;
+    flex-direction: column;
+}
