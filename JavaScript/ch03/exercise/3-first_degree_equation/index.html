@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First degree equation application</title>
+    <script>
+        var a;
+        var b;
+        var x;
+
+        a = parseInt(prompt("Input a: "));
+        while (isNaN(a)) {
+            a = prompt("a is not a number. Please try again: ");
+        }
+
+        b = parseInt(prompt("Input b: "));
+        while (isNaN(b)) {
+            b = prompt("b is not a number. Please try again: ");
+        }
+
+        x = -b / a;
+
+        if (a != 0) {
+            alert("Phuong trinh co nghiem: x = " + x);
+        } else if (a == 0 && b == 0) {
+            alert("Phuong trinh co vo so nghiem");
+        } else {
+            alert("Phuong trinh vo nghiem");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
