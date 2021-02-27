@@ -7,8 +7,16 @@
     <title>Swap two integer number</title>
     <script>
         var a, b, temp;
+
         a = parseInt(prompt("Input a: "));
+        while (isNaN(a)) {
+            a = prompt("a is not a number. Please try again: ");
+        }
+
         b = parseInt(prompt("Input b: "));
+        while (isNaN(b)) {
+            b = prompt("b is not a number. Please try again: ");
+        }
 
         c = a;
         a = b;

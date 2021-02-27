@@ -12,18 +12,30 @@
         var average;
 
         math = parseFloat(prompt("Please enter the Math score: "));
+        while (isNaN(math) || math < 0 || math > 10) {
+            math = parseFloat(prompt("The Math score is invalid. Please try again: "));
+        }
+        
         physics = parseFloat(prompt("Please enter the Physics score: "));
+        while (isNaN(physics) || physics < 0 || physics > 10) {
+            physics = parseFloat(prompt("The Physics score is invalid. Please try again: "));
+        }
+
         chemistry = parseFloat(prompt("Please enter the Chemistry score: "));
+        while (isNaN(chemistry) || chemistry < 0 || chemistry > 10) {
+            chemistry = parseFloat(prompt("The Chemistry score is invalid. Please try again: "));
+        }
+
         average = (math + physics + chemistry) / 3;
 
         if (average >= 8) {
-            alert("Rank: A");
+            alert("The average score: " + average + ". Rank: A");
         } else if (average >= 6.5) {
-            alert("Rank: B");
+            alert("The average score: " + average + ". Rank: B");
         } else if (average >= 5) {
-            alert("Rank: C");
+            alert("The average score: " + average + ". Rank: C");
         } else {
-            alert("Rank: D");
+            alert("The average score: " + average + ". Rank: D");
         }
         
     </script>
