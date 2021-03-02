@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number;
+        var count = 0;
+        var total = 0;
+        var average = 0;
+
+        do {
+            number = parseInt(prompt("Input a number: "));
+            if (isNaN(number)) {
+                alert("Your input value is not a number");
+            } else if (number < 0 || number > 100) {
+                alert("Rank of value not in 0 -> 100");
+            } else {
+                total += number;
+                count++;
+            }       
+        } while (number!=999);
+
+        if (count > 0) {
+            alert(average = total / count);
+        } else {
+            alert(average);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
