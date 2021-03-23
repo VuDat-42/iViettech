@@ -1,0 +1,29 @@
+main {
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+
+h1 {
+    color: blue;
+}
+
+label {
+    float: left;
+    width: 11em;
+    text-align: left;
+}
+
+input, select {
+    margin-bottom: 1em;
+    width: 20em;
+}
+
+span {
+    color: red;
+}
+
+input[type="checkbox"], [type="radio"] {
+    width: 1em;
+}
